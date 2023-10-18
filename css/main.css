@@ -1,0 +1,36 @@
+:root {
+  --bg-standard: #241c1b;
+  --bg-light: #2e2322;
+  --bg-dark: #1a1110;
+
+  --text-on-bg: #fff;
+  --text-on-fg: #000;
+  --primary-hover: #96eff2;
+  --primary: #6be0e6;
+  --accent: #f2a696;
+
+  background-color: var(--bg-standard);
+}
+
+.pyro-button {
+  background-color: var(--primary);
+  color: var(--text-on-fg);
+  border-radius: 5px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  border: none;
+}
+
+.pyro-button:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.05);
+}
+
+.pyro-button:active {
+  background-color: var(--primary);
+  transform: scale(0.95);
+}

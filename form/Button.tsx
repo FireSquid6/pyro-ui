@@ -1,3 +1,3 @@
 export default function Button() {
-  return <button>Click me!</button>;
+  return <button className="pyro-button">Click me!</button>;
 }
