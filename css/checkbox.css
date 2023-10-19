@@ -1,0 +1,35 @@
+.pyro-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.pyro-checkbox input {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.pyro-checkbox__checkmark {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 4px;
+  background-color: var(--bg-dark);
+  margin-right: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.pyro-checkbox__checkmark:hover {
+  background-color: var(--bg-light);
+}
+
+.pyro-checkbox__checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
